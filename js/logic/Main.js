@@ -8,14 +8,14 @@
         baseUrl: "../js",
 
         paths: {
-            jquery: "libs/jquery-1.10.2",
+            jQuery: "libs/jquery-1.10.2",
             EventBus: "libs/EventBus",
             DemoEventBus: "logic/DemoEventBus"
         },
 
         shim: {
-            jquery: {
-                exports: "jquery"
+            jQuery: {
+                exports: "jQuery"
             },
 
             EventBus: {
@@ -23,13 +23,13 @@
             },
 
             DemoEventBus: {
-                deps: ["jquery", "EventBus"],
+                deps: ["jQuery", "EventBus"],
                 exports: "DemoEventBus"
             }
         }
     });
 
-    define(["jquery", "DemoEventBus"], function() {
+    define(["jQuery", "DemoEventBus"], function() {
         console.info("Successfully loaded jQuery and EventBus using RequireJS");
     });
 

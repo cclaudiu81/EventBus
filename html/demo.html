@@ -11,11 +11,25 @@
 </head>
 <body>
 
-<div id="email_form">
+<div id="order_id">
+
+    <!-- 1. Product is added the the cart label-->
+    <span id="cart_id" class="label label-info">No items in cart</span>
+
     <form class="form-inline" role="form">
 
         <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <label class="sr-only">Nickname</label>
+
+            <div id="NickName">
+                <input type="text" class="form-control" id="nick_name_id" placeholder="Enter NickName">
+            </div>
+
+        </div>
+
+        <!-- 2. The email and password should be marked as mandatory once the BUY button is clicked-->
+        <div class="form-group">
+            <label class="sr-only">Email address</label>
 
             <div id="email_text_field_id">
                 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
@@ -30,9 +44,12 @@
                 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
             </div>
 
-            <button type="submit" class="btn btn-default">Sign in</button>
+            <button id="buy_button_id" type="button" class="btn btn-default">Buy Now</button>
         </div>
     </form>
+
+    <!-- 3. Notification is prompted once the user enters the credentials and clicks on BUY button -->
+    <span id="buy_notification_id" class="label label-default"></span>
 </div>
 
 
